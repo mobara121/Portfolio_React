@@ -23,9 +23,9 @@ const StyledSpan = styled.span`
 
 const useStyles = makeStyles((theme) => ({
     modal: {
-      marginLeft: "400px",
-      marginTop: "200px",
-      maxWidth: "400px",
+      margin: "100px auto",
+      // marginTop: "200px",
+      maxWidth: "80%",
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -33,11 +33,11 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       backgroundColor: "white",
       border: 'none',
-      borderRadius: "2%",
+      // borderRadius: "2%",
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
-  }));
+}));
 
 
 function Education() {

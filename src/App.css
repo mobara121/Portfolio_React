@@ -37,13 +37,33 @@
   }
 }
 
+/* Contact */
+#contact-btn{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 10px 20px;
+  padding: 0;
+  color: #fafafa;
+  font-size:23px;
+}
+#contact-btn:hover { 
+  border-radius: 25px;
+  color: #fafafa;
+  background-color: #9bcfde;
+} 
+
+#transition-modal-description{
+  font-size: 25px;
+}
+
+/* footer */
 #footer {
   text-align: center;
   margin: 0px auto 20px auto;
   padding: 20px auto;
   color: #fafafa;
   border-color: #292929;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
   font-family: "Work Sans", -apple-system, ".SFNSText-Regular", "San Francisco",
     "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !important;

@@ -3,10 +3,10 @@ import styled from "styled-components";
 import {Grid} from '@material-ui/core';
 import SkillGroup from "./SkillGroup";
 import AddButton from './AddButton';
-// import { getFunName, getRandomReadTime, getArticleType } from "./Skillhelper";
 import Ramen from '../../assets/ramenApp.png';
 import Blog from '../../assets/blog.png';
 import Portfolio from '../../assets/portfolio.png';
+import StaticLayout from '../../assets/StaticLayout.png';
 
 const Container = styled.div`
   display: grid;
@@ -35,16 +35,6 @@ const StyledH1 = styled.h1`
   }
 `;
 
-// const StyledSpan = styled.span`
-//   color: #fafafa;
-//   font-family: "Work Sans", -apple-system, ".SFNSText-Regular", "San Francisco",
-//     "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !important;
-//   font-weight: 500;
-//   font-size: 1em;
-//   line-height: 1.45em;
-//   max-width: 900px;
-// `;
-
 function Skills() {
   // make below based on routes
   const [items, setItems] = useState([]);
@@ -72,18 +62,24 @@ function Skills() {
         skill: "Postman API Back-End-Web Development Trello Express.js Ant Design",
         img: Blog,
       },
-      // {
-      //   id: 3,
-      //   title: "PORTFOLIO",
-      //   skill: "New Article",
-      //   img: Portfolio,
-      // },
-      // {
-      //   id: timestamp,
-        // title: getFunName(),
-        // subtitle: getArticleType(),
-        // readTime: getRandomReadTime()
-      // }
+      {
+        id: 3,
+        title: "STATIC LAYOUT",
+        skill: "HTML5, CSS#",
+        img: StaticLayout,
+      },
+      {
+        id: 4,
+        title: "Blue Badge-TBA",
+        skill: " ",
+        img: " # ",
+      },
+      {
+        id: 5,
+        title: "Red Badge-TBA",
+        skill: " ",
+        img: " # ",
+      },
     ]);
   };
 

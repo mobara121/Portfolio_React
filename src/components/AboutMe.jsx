@@ -22,9 +22,9 @@ const StyledSpan = styled.span`
 
 const useStyles = makeStyles((theme) => ({
     modal: {
-      marginLeft: "100px",
-      marginTop: "100px",
-      maxWidth: "400px",
+      margin: "100px auto",
+      // marginTop: "100px",
+      maxWidth: "80%",
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       backgroundColor: "white",
       border: 'none',
-      borderRadius: "2%",
+      // borderRadius: "25%",
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
@@ -71,7 +71,8 @@ function AboutMe() {
         <Fade in={open}>
           <div className={classes.paper}>
             <h1 id="transition-modal-title">About Me</h1>
-            <p id="transition-modal-description">Lapanese/English Bilingual professional with a newfound passion for web development. In my past life, I've worked in laboratories discovering new flavors for ice cream, managed inventories for multi-national companies, even acted as a cultural liaison for Japanese citizens living in America. I'm currently on my new journey to become a full-stack developer by studying HTML5, CSS, JavaScript, and React at Eleven Fifty Academy. </p>
+            <p id="transition-modal-description">Japanese/English Bilingual professional with a newfound passion for web development. In my past life, I've worked in laboratories discovering new flavors for ice cream, managed inventories for multi-national companies, even acted as a cultural liaison for Japanese citizens living in America. I'm currently on my new journey to become a full-stack developer by studying HTML5, CSS, JavaScript, React, and C# at Eleven Fifty Academy. </p>
+            <p id="transition-modal-description">日本語と英語両方のスキルを活用してこれまで日本とアメリカで会社員として働いてきました。フロントエンドデベロッパーとして今後は活動すべく、日英バイリンガルに加えてHTML5、CSS、Javascript、React、そしてC#をEleven Fifty Academyで勉強中です。LinkedinやGithubも是非ご覧ください。</p>
           </div>
         </Fade>
       </Modal>

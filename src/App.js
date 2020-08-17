@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Topbar from './components/Nav/Navbar.jsx';
 import AboutMe from './components/AboutMe';
 import Education from './components/Education';
 import Skills from './components/Skill/Skills';
@@ -57,6 +58,7 @@ const StyledSpan = styled.span`
 function App() {
   return (
       <div>
+        <Topbar/>
         <Container className="App">
             <StyledH1>MIZUE O'BARA</StyledH1>
             <StyledH3>Front End Developer</StyledH3>

@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import SkillCard from "./SkillCard";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-// ☝🏻
-// wrap Styled Grid in Transition Group
-// wrap individual items in CSS transition
-// need to apply the styled to styled component
 
 const StyledGrid = styled.div`
   display: grid;
@@ -33,10 +29,7 @@ const StyledGrid = styled.div`
 
 const SkillGroup = props => {
   return (
-    // if I wrapped StyledGrid in TransitionGroup or vice versa,
-    // I got some odd results. cleanest way is to use the component prop
-    // of transition group to have its behavior applied to StyledGrid
-    // rather than wrapping in the JSX
+    
     <TransitionGroup component={StyledGrid}>
       {props.items.map(item => (
         <CSSTransition key={item.id} timeout={300} classNames="transition">
