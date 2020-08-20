@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import Sakura from '../../assets/b40ad1a6e7daaaff75d2ca4cebe10c01.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -15,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: ".SFNSText-Regular",
     },
     paper: {
-      backgroundColor: "white",
+      backgroundColor: 'white',
       border: 'none',
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
@@ -36,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
         width: '97%',
         fontSize: '20px',
         height: '120px',
-        padding: '5px',
+        padding: '10px',
     },
     button: {
         width: '25%',
